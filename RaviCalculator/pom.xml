@@ -6,7 +6,7 @@
 
   <groupId>com.ravi.cal</groupId>
   <artifactId>RaviCalculator</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
 
   <name>RaviCalculator</name>
   <!-- FIXME change it to the project's website -->
@@ -27,7 +27,18 @@
     </dependency>
   </dependencies>
 
-  <build>
+<distributionManagement>
+  <repository>
+    <id>releaseRepo</id>
+    <url>http://35.200.208.109:8081/nexus/content/repositories/releaseRepo</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshotRepo</id>
+    <url>http://35.200.208.109:8081/nexus/content/repositories/snapshotRepo</url>
+  </snapshotRepository>
+</distributionManagement>
+  
+<build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->

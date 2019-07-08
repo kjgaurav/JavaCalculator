@@ -1,4 +1,5 @@
-package com.ravi.cal.RaviCalculator;
+package com.ravi.cal;
+//package com.ravi.cal.RaviCalculator;
 
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
